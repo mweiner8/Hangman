@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.hangman.MainActivity">
+
+    <item
+        android:id="@+id/restart_game"
+        android:icon="@android:drawable/ic_media_play"
+        android:title="@string/new_game"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about"
+        android:title="@string/about"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="standard_text_input_layout_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="standard_text_input_edit_text_style">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">textCapCharacters</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:digits">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:overlapAnchor">false</item>
+        <item name="android:dropDownVerticalOffset">0dp</item>
+        <item name="overlapAnchor">false</item>
+    </style>
+
+<!--    <style name="standard_material_text_view_style">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginBottom">@dimen/standard_margin</item>-->
+<!--        <item name="android:text">@string/instructions</item>-->
+<!--        <item name="android:textSize">10pt</item>-->
+<!--    </style>-->
+
+<!--    <style name="standard_text_view_style">-->
+<!--        <item name="android:padding">@dimen/standard_margin</item>-->
+<!--        <item name="android:layout_width">match_parent</item>-->
+<!--        <item name="android:layout_height">match_parent</item>-->
+<!--        <item name="android:gravity">center_horizontal</item>-->
+<!--        <item name="android:text">@string/initial_text</item>-->
+<!--        <item name="titleTextAppearance">@style/TextAppearance.Material3.ActionBar.Title</item>-->
+<!--    </style>-->
+
+<!--    <style name="multi_text_view_style">-->
+<!--        <item name="android:textColor">?attr/colorSecondary</item>-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_marginTop">@dimen/standard_margin</item>-->
+<!--        <item name="android:textAppearance">@style/TextAppearance.Material3.TitleMedium</item>-->
+<!--    </style>-->
+
+<!--    <style name="multi_text_view_style.results">-->
+<!--        <item name="android:layout_width">wrap_content</item>-->
+<!--        <item name="android:layout_height">wrap_content</item>-->
+<!--        <item name="android:layout_margin">@dimen/standard_margin</item>-->
+<!--    </style>-->
+
+</resources>

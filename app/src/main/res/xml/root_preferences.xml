@@ -1,0 +1,12 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="@string/mode_header">
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            app:key="@string/short_words_key"
+            app:summaryOff="@string/short_words_off"
+            app:summaryOn="@string/short_words_on"
+            app:title="@string/short_words_title" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
