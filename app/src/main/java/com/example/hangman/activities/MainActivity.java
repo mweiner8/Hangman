@@ -1,4 +1,4 @@
-package com.example.hangman;
+package com.example.hangman.activities;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 
+import com.example.hangman.models.HangmanModel;
+import com.example.hangman.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.activity.result.ActivityResultLauncher;
@@ -24,8 +26,8 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import java.util.Objects;
-import static com.example.hangman.HangmanModel.getGameFromJSON;
-import static com.example.hangman.HangmanModel.getJSONFromGame;
+import static com.example.hangman.models.HangmanModel.getGameFromJSON;
+import static com.example.hangman.models.HangmanModel.getJSONFromGame;
 
 public class MainActivity extends AppCompatActivity {
     private ActivityMainBinding binding;
@@ -146,13 +148,13 @@ public class MainActivity extends AppCompatActivity {
                 binding.contentMain.allContent.fullWordViewInclude.tvFullWord.setText(formattedWord);
             }
         } else {
-            message = "The game is over. Please restart for a new game.";
+            message = getString(R.string.game_over_message);
         }
         mSnackBar.setText(message);
         mSnackBar.show();
         if (mGame.isGameDone()){
             dismissSnackBarIfShown();
-            showInfoDialog(this, "Game Over", mGame.gameOverMessage());
+            showInfoDialog(this, getString(R.string.game_over), mGame.gameOverMessage());
         }
     }
 
@@ -189,8 +191,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void showAbout(){
         dismissSnackBarIfShown();
-        showInfoDialog(MainActivity.this, "About Hangman",
-                "This is an Android App implementation of the classic game Hangman. Enjoy!");
+        showInfoDialog(MainActivity.this, getString(R.string.about_modal_title),
+                getString(R.string.about_modal_content));
     }
 
     private void dismissSnackBarIfShown() {

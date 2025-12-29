@@ -15,4 +15,9 @@
     <string name="short_words_on">Only words of 8 letters or fewer will be used</string>
     <string name="short_words_title">Hard Mode</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="about_modal_title">About Hangman</string>
+    <string name="about_modal_content">This is an Android App implementation of the classic game Hangman, created by Avi Weiner as part of MCOO 255. Enjoy!</string>
+    <string name="game_over">Game Over</string>
+    <string name="game_over_message">The game is over. Please restart for a new game.</string>
+
 </resources>

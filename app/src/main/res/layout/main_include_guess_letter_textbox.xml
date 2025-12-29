@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/guess"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="@dimen/small_margin"
             android:textAppearance="@style/TextAppearance.Material3.BodyLarge" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -36,7 +36,7 @@
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
+            android:layout_marginStart="@dimen/small_margin"
             android:text="@string/submit_guess"
             app:icon="@android:drawable/ic_media_play" />
 

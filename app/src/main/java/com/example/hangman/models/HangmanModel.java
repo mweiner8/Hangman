@@ -1,4 +1,4 @@
-package com.example.hangman;
+package com.example.hangman.models;
 
 import android.os.Build;
 
